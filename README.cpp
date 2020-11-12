@@ -27,7 +27,7 @@ int spanningTree(int V, int E, vector<vector<int>> &graph) {
     vector<bool>Inmst(V,false);
     
     // vector to calcultae the minimum distance to reach every vertices
-    vector<int>key(V,INT_MAX); // initailaised with INT_MIN as we have to find the minimum distance
+    vector<int>key(V,INT_MAX); // initailaised with INT_MAX as we have to find the minimum distance
     key[0]=0; // because the 0th vertex have minimum distance 0
     
     // run a loop till v-1 because mst will have v-1 edges only
